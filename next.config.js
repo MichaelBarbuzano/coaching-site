@@ -2,16 +2,16 @@
 const nextConfig = {}
 
 module.exports = {
-  // Add this configuration
-  exportPathMap: function () {
+  // Remove or update the 'output' configuration if it's present
+  // Remove any other deprecated or invalid configurations
+
+  // Add any other necessary configurations here
+  
+  // Add the exportPathMap configuration to define the routes
+  exportPathMap: async function () {
     return {
       '/': { page: '/' },
       // Add other routes here if needed
     };
   },
-  // Add this configuration to enable static HTML export
-  target: 'serverless',
-  // Add this configuration for Next.js 11 and later versions
-  // If you are using an older version of Next.js, you may not need this line
-  experimental: { output: 'export' },
 };
